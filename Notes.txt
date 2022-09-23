@@ -1,0 +1,92 @@
+What are the important components of SSIS package?
+	The important component in SSIS package are:
+		Control flow
+		Data flow
+		Parameters
+		Package Explorer
+		Event handlers
+
+Define what is “task” in SSIS?
+	 A task in SSIS is individual or smallest unit of work in control flow like:
+		Data Flow Task, Execute SQL Task, FTP Task, Script Task, Send Mail Task, Expression Task etc.
+		
+What is an SSIS package?
+	A package in SSIS is an organized collection of connections like data flow elements, control events, event handlers, parameters, 
+	variables (system variable and user variable), conditional split, lookup transformation, and configurations.
+	
+Name different types of connection managers?
+	OLEDB (Object Linking and Embedding - different db connections provide in a uniform manner.), Flat File, FTP, S3, Salesforce, SMTP, MongoDB etc.
+	
+What is a container? How many types of containers are there in SSIS?
+	In SSIS, a container is a logical grouping of tasks:
+		Sequence container
+		For loop container (A for loop will execute the tasks a specified number of times, in other words 10 times, or 25 times)
+		Foreach loop container (very similar to a for loop, except there is no evaluation phase. This is because you are looping over a collection of objects)
+
+Explain what is a checkpoint in SSIS?
+	Checkpoint in SSIS allows the project to restart from the point of failure. Checkpoint file stores the information about the package execution, if the 
+	package run successfully the checkpoint file is deleted or else it will restart from the point of failure.
+	
+What is SSIS breakpoint?
+	A breakpoint enables you to pause the execution of the package in the business intelligence development studio during troubleshooting or development of an 
+	SSIS package.
+	
+Explain the term data flow buffer?
+	SSIS operates using buffers; it is a kind of an in-memory virtual table to hold data.
+	
+Explain the method to perform incremental load and full load?
+
+What will be your first approach if the package that runs fine in Visual Studio (VS) or Business Intelligence Development Studio (BIDS) but fails when running from an SQL agent job?
+
+Explain different options for dynamic configuration is SSIS.
+	Parameters and Variables
+
+Name data flow components in SSIS
+	OLE DB Destination (Source), Flat File Destination (Source), Excel Destination (Source), SQL Server Destination (Source), Salesforce Destination (Source),
+	Lookup, Conditional Split, Data Conversion etc.
+	i.e. Categories: Source, Transformation, Destination
+
+	
+Explain project and package control flow in  SSIS
+	In SSIS, a project is a container for developing package while the package is an object which helps you to implement ETL.
+	Projects > Packages
+	
+What is Solution Explorer SSIS?
+	The Solution Explorer window is where you can find all your created SSIS packages, project connection managers, project parameters, 
+	and any other miscellaneous files needed for the project, such as installation documents.
+	
+What is an SSIS Catalog?
+	The SSIS catalog is a database to store all the deployed packages. It is widely used for security reasons to store and handle the deployed packages.
+	
+Disadvantages:
+	To see package execution report need Management Studio rather than being published to reporting services or other way.
+	If multiple packages are available that need to run parallel then you have a trouble. SSIS memory usage is high and it conflicts with SQL.
+	
+	
+Feature-SSIS-Informatica:
+Security-Secure-Secure
+Maintenance and Administration-Easy-Difficult
+Ease of Implementation-Easy-Moderate
+Performance in a medium SQL server environment-Performs well-Performs well
+
+Define Precedence Constraint:
+	Precedence Constraint is used for enabling the developers to define a set of tasks logically and define the order of execution. 
+	These are connectors (--->) used for connecting all the tasks.
+	
+Is it possible to schedule packages for a specific time period of a day?
+
+How many lookup cache modes are present in SSIS?
+	Full Cache Mode: This mode helps in querying the database before the data-flow task is executed. This constitutes a critical part of the 
+					 pre-execution step of the data-flow task. In this mode, the entire data copy is copied from the table and stored into the 
+					 lookup cache in SSIS.
+	Partial Cache Mode: This mode helps in querying new rows in the database from different data sources. Here, the matched row data is cached 
+				     into the SSIS lookup cache.
+	No Cache Mode: Here, the data is not cached unless 2 subsequent sources come up with the same matched rows. Database queries are run to get 
+				   matched data every time from the source
+				   
+Define Manifest/Config file
+
+Difference between Merge Transformation and Union all transformations.
+	Merge transformation is very similar to the Union All Transformation, which combines rows from different sources into one output. 
+	The main difference is that Union All doesn't require that the data sources are sorted, nor does its output.
+	Merge can only merge 2 sources of data, whereas Union All supports more
