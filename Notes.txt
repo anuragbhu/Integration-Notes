@@ -103,3 +103,4 @@ ETL?
 	T for TRANSFORMATION cleansing data before loading to remove errors.
 	L for LOADING
 
+Operational Data Store (ODS) vs. Enterprise Data Warehouse (EDW) vs. Staging Area (STG)
