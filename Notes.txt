@@ -13,6 +13,7 @@ Define what is “task” in SSIS?
 What is an SSIS package?
 	A package in SSIS is an organized collection of connections like data flow elements, control events, event handlers, parameters, 
 	variables (system variable and user variable), conditional split, lookup transformation, and configurations.
+	Package Configurations – After developing your package and before deploying the package in the production environment from UAT you need to perform certain package configurations as per production Server.
 	Extension .dtsx for SSIS package.
 	
 Name different types of connection managers?
