@@ -72,7 +72,8 @@ Performance in a medium SQL server environment-Performs well-Performs well
 
 Define Precedence Constraint:
 	Precedence Constraint is used for enabling the developers to define a set of tasks logically and define the order of execution. 
-	These are connectors (--->) used for connecting all the tasks.
+	These are connectors (--->) used for connecting all the tasks. (OR)
+	These are the arrows in a Control flow of a package that connect the tasks together and manage the order in which the tasks will execute.
 	
 Is it possible to schedule packages for a specific time period of a day?
 
