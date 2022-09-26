@@ -13,6 +13,7 @@ Define what is “task” in SSIS?
 What is an SSIS package?
 	A package in SSIS is an organized collection of connections like data flow elements, control events, event handlers, parameters, 
 	variables (system variable and user variable), conditional split, lookup transformation, and configurations.
+	Extension .dtsx for SSIS package.
 	
 Name different types of connection managers?
 	OLEDB (Object Linking and Embedding - different db connections provide in a uniform manner.), Flat File, FTP, S3, Salesforce, SMTP, MongoDB etc.
@@ -89,4 +90,14 @@ Define Manifest/Config file
 Difference between Merge Transformation and Union all transformations.
 	Merge transformation is very similar to the Union All Transformation, which combines rows from different sources into one output. 
 	The main difference is that Union All doesn't require that the data sources are sorted, nor does its output.
-	Merge can only merge 2 sources of data, whereas Union All supports more
+	Merge can only merge 2 sources of data, whereas Union All supports more.
+	
+What is SSIS?
+	A platform for ETL operations.
+	It is a platform for Data integration and Workflow applications.
+
+ETL?
+	E for EXTRACTION from heterogeneous data stores (i.e. it may be a text file, spreadsheets, Oracle, etc.)
+	T for TRANSFORMATION cleansing data before loading to remove errors.
+	L for LOADING
+
